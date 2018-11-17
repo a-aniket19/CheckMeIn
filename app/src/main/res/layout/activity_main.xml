@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="100"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anike.homework3.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_margin="3dp"
+        android:id="@+id/innerLL1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:text="Latitude :"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/latitude"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:id="@+id/innerLL2"
+        >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:text="Latitude :"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"
+            />
+
+
+        <TextView
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/longitude"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        >
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_weight="30"
+           android:layout_height="match_parent"
+           android:text="Grad"
+           android:id="@+id/grad"
+           android:onClick="Grad"/>
+
+        <EditText
+            android:id="@+id/checkinText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="67"
+        android:layout_margin="5dp"
+        android:id="@+id/ListView"
+        android:layout_marginTop="10dp"
+        >
+
+    </ListView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Checkin"
+            android:text="CheckIn"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/autoCheck"
+            android:layout_toRightOf="@id/Checkin"
+            android:layout_marginTop="10dp"
+            android:text="Auto"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Openmaps"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Open Maps"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Delete"
+            android:layout_toRightOf="@id/autoCheck"
+            android:id="@+id/delete"/>
+
+    </RelativeLayout>
+</LinearLayout>
